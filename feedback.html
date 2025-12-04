@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h1>🧁 Frost Freak</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="interactive.html">FAQ</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="contact us.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="feedback">
+    <h2>Tell us how we did!</h2>
+
+    <form action="https://formspree.io/f/xanrbqdz" method="POST">
+
+      <label>
+        Name *
+        <input type="text" name="name" required placeholder="Your full name">
+      </label>
+
+      <label>
+        Email *
+        <input type="email" name="email" required placeholder="you@example.com">
+      </label>
+
+      <label>
+        Which treat did you try? *
+        <select name="treat" required>
+          <option value="" disabled selected>Pick one…</option>
+          <option>Velvet Dream Cake</option>
+          <option>Choco-Hazelnut Heaven</option>
+          <option>Strawberry Shortcake</option>
+          <option>Matcha Bliss</option>
+          <option>Tiramisu Cake</option>
+          <option>Funfetti Explosion</option>
+          <option>Other</option>
+        </select>
+      </label>
+<label>
+  How would you rate it? *
+  <div class="stars" role="radiogroup" aria-label="Rating">
+    <input type="radio" name="rating" value="5" id="s5" required>
+    <label for="s5" aria-label="5 stars">★</label>
+
+    <input type="radio" name="rating" value="4" id="s4">
+    <label for="s4" aria-label="4 stars">★</label>
+
+    <input type="radio" name="rating" value="3" id="s3">
+    <label for="s3" aria-label="3 stars">★</label>
+
+    <input type="radio" name="rating" value="2" id="s2">
+    <label for="s2" aria-label="2 stars">★</label>
+
+    <input type="radio" name="rating" value="1" id="s1">
+    <label for="s1" aria-label="1 star">★</label>
+  </div>
+</label>
+
+
+
+      <label>
+        Your comments *
+        <textarea name="comments" rows="4" required placeholder="What did you love? Anything we can improve?"></textarea>
+      </label>
+
+      <button type="submit">Send Feedback</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Frost Freak Bakery</p>
+</footer>
+
+</body>
+</html>
